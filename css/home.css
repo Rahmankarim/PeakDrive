@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+#collapsibleNavbar {
+  font-size: 30px;
+  justify-content: space-between;
+}
+.nav-item {
+  margin-left: 2vw;
+}
+.navbar-brand {
+  font-size: 60px;
+}
+.right-side {
+  margin-right: 30px;
+}
+.signup {
+  background-color: #00b4d8;
+  color: white;
+}
+.menudiv {
+  position: fixed;
+  background-color: #c5c0ea;
+  z-index: 1000;
+  border-radius: 10px;
+}
+.Sec1 {
+  background-image: url("../images/9e3512f7e3ea4aedc62c766d7eae0b58.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.img-div {
+  margin-top: 209px;
+}
+.textInHeader {
+  font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 64px;
+}
+.inputandtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.innerInputDiv {
+  position: absolute;
+  right: 5%;
+  bottom: 40%;
+  width: 580px;
+}
+
+.locAndDes {
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+}
+.navbar a {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #00b4d8;
+}
+.navbar-brand:hover {
+  color: #ffffff;
+}
+.signup {
+  color: white;
+}
+.signup:hover {
+  background-color: white;
+  color: #00b4d8;
+}
+.z-1 {
+  z-index: 1 !important;
+}
+.end-0 {
+  right: 0 !important;
+}
+.start-0 {
+  left: 0 !important;
+}
+.bottom-0 {
+  bottom: -130px !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+.wave {
+  width: 100% !important;
+}
+@media (min-width: 768px) {
+  .mb-md-n2 {
+    margin-bottom: -1rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .py-md-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+.bg-white {
+  --brainwaveio-bg-opacity: 1;
+  background-color: rgba(
+    var(--brainwaveio-white-rgb),
+    var(--brainwaveio-bg-opacity)
+  ) !important;
+}
+.numbers {
+  font-weight: bold;
+  font-size: 80px;
+  color: #00b4d8;
+}
+.textNumber {
+  filter: opacity(0.8);
+}
+.getStarted:hover {
+  transform: scale(0.9);
+}
+.getStarted {
+  text-align: center;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+#demo {
+  background-color: #00b4d8;
+  padding: 50px 50px 0px 50px;
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+}
+.footer {
+  background-color: #f6f6f6;
+}
+.GIT {
+  padding-top: 50px;
+}
+.form-git {
+  height: 55px;
+}
+
+.namesInCarousel {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: start;
+}
+
+@media screen and (max-width: 1070px) {
+  .disablebth {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    justify-content: center;
+  }
+}

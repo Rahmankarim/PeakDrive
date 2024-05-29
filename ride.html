@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeakDrive</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/ride.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="menudivid" class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <a style="margin-left: 10px" class="navbar-brand" href="./home.html"
+          ><span
+            class="peak"
+            style="
+              font-weight: bold;
+              font-family: 'Times New Roman', Times, serif;
+            "
+            >Peak</span
+          ><span style="color: #00b4d8">Drive</span></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="background-color: white"
+          ></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="collapsibleNavbar"
+          style="justify-content: center"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./ride.html">Ride</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Driver</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PeakEat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-side d-flex">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link signin disablebth"
+                href="./login.html"
+                style="padding: 13px; font-weight: bold; font-size: 20px"
+                >Sign in</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link signup rounded-pill disablebth"
+                href="./login.html"
+                style="padding: 13px; font-weight: bold; font-size: 20px"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-4 mt-4 text-center">
+          <div class="container left-menu rounded mb-5">
+            <div class="row">
+              <div class="col-12 mt-4">
+                <h4>Get a Ride:</h4>
+              </div>
+
+              <div class="col-12 mt-2">
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  class="form-control text-center border-dark"
+                  placeholder="Pickup Location "
+                  style="height: 60px; font-size: 20px"
+                />
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  class="form-control text-center border-dark mt-4 .bg-light text-dark"
+                  placeholder="Dropdown Location"
+                  style="height: 60px; font-size: 20px"
+                />
+                <select
+                  class="form-select mt-3 text-center border-dark"
+                  name="Pickup"
+                  id="Pickup"
+                  style="height: 60px; font-size: 20px"
+                >
+                  <option value="PickupDateandTime">
+                    Pickup Date and Time
+                  </option>
+                  <option value="Date">Date</option>
+                  <option value="Time">Time</option>
+                </select>
+
+                <a
+                  href=""
+                  class="btn mt-4 mb-5"
+                  style="
+                    background-color: #00b4d8;
+                    color: white;
+                    font-size: 25px;
+                  "
+                  >Search</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 mapping">
+          <div class="border border-dark rounded-pill" id="map"></div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/ride.js"></script>
+  </body>
+</html>

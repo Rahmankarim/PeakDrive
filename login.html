@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeakDrive</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body style="background-color: rgb(0, 0, 0)">
+    <div
+      id="menudivid"
+      class="container-fluid menudiv"
+      style="background-color: rgba(0, 0, 0, 0.505)"
+    >
+      <nav class="navbar navbar-expand-lg">
+        <a style="margin-left: 10px" class="navbar-brand" href="./home.html"
+          ><span
+            class="peak"
+            style="
+              font-weight: bold;
+              font-family: 'Times New Roman', Times, serif;
+            "
+            >Peak</span
+          ><span style="color: #00b4d8">Drive</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="background-color: white"
+          ></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="collapsibleNavbar"
+          style="justify-content: flex-start"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./ride.html">Ride</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Driver</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PeakEat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container" style="padding: 40px">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div class="row">
+            <div class="col-6">
+              <!-- signin and signup tabs -->
+              <a
+                id="tabSignin"
+                href=""
+                class="btn rounded tabs text-light mb-3 active"
+                >Sign in</a
+              >
+            </div>
+            <div class="col-6">
+              <a
+                id="tabSignup"
+                href=""
+                class="btn rounded tabs text-light mb-3 notactive"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div class="col-10 mt-4">
+          <select
+            name="sel"
+            id="sel"
+            class="form-select mb-3 text-center"
+            required
+          >
+            <option>Choose what are you sign in/up for</option>
+            <option value="passenger">Passenger</option>
+            <option value="Driver">Driver</option>
+            <option value="PeakEat">PeakEat</option>
+          </select>
+        </div>
+        <!-- input fields -->
+        <div class="col-md-10">
+          <form action="">
+            <div class="row">
+              <div id="firstname" class="col-md-6" style="display: none">
+                <label
+                  for="fname"
+                  class="inputLabels"
+                  style="color: rgba(0, 0, 0, 0.616)"
+                  >First Name:</label
+                >
+
+                <input
+                  class="form-control text-center fields"
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="First Name"
+                />
+              </div>
+              <div id="lastname" class="col-md-6" style="display: none">
+                <label
+                  for="lname"
+                  class="inputLabels"
+                  style="color: rgba(0, 0, 0, 0.616)"
+                  >Last Name:</label
+                >
+
+                <input
+                  class="form-control text-center fields"
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="col-md-6 mt-3">
+                <label
+                  for="number"
+                  class="inputLabels"
+                  style="color: rgba(0, 0, 0, 0.616)"
+                  >Enter Number:</label
+                >
+                <input
+                  class="form-control text-center fields"
+                  type="number"
+                  name="number"
+                  id="number"
+                  placeholder="Number"
+                />
+              </div>
+
+              <div class="col-md-6 mt-3">
+                <label
+                  for="number"
+                  class="inputLabels"
+                  style="color: rgba(0, 0, 0, 0.616)"
+                  >Enter Email:</label
+                >
+                <input
+                  class="form-control text-center fields"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="col-md-12">
+                <label
+                  class="inputLabels mt-3"
+                  style="color: rgba(0, 0, 0, 0.616)"
+                  for="pass"
+                  >Enter Password:</label
+                >
+                <input
+                  class="form-control text-center fields"
+                  type="password"
+                  name="pass"
+                  id="pass"
+                  placeholder="Password"
+                />
+              </div>
+              <div
+                id="passwordField"
+                class="col-md-12 mt-3"
+                style="display: none"
+              >
+                <label
+                  class="inputLabels mt-3"
+                  style="color: rgba(0, 0, 0, 0.616)"
+                  for="Cpass"
+                  >Conform Password:</label
+                >
+                <input
+                  class="form-control text-center fields"
+                  type="password"
+                  name="Cpass"
+                  id="Cpass"
+                  placeholder="Conform Password"
+                />
+              </div>
+
+              <div class="col-lg-12 mt-3" style="font-size: 20px">
+                <input
+                  type="checkbox"
+                  name="check"
+                  id="check"
+                  class="form-check-input"
+                />
+                <label class="form-check-label" for="check">Remember Me</label>
+              </div>
+              <div id="signinBtn" class="col-lg-12">
+                <a
+                  href=""
+                  class="btn rounded tabs text-light mb-3 activeBtn mt-3"
+                  >Sign in</a
+                >
+              </div>
+              <div id="signupBtn" class="col-lg-12" style="display: none">
+                <a
+                  href=""
+                  class="btn rounded tabs text-light mb-3 activeBtn mt-3"
+                  >Sign Up</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

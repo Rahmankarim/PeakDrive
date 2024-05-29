@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeakDrive</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="menudivid" class="container-fluid menudiv">
+      <nav class="navbar navbar-expand-lg">
+        <a style="margin-left: 10px" class="navbar-brand" href="./home.html"
+          ><span
+            class="peak"
+            style="
+              font-weight: bold;
+              font-family: 'Times New Roman', Times, serif;
+            "
+            >Peak</span
+          ><span style="color: #00b4d8">Drive</span></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="collapsibleNavbar"
+          style="justify-content: center"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./ride.html">Ride</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Driver</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PeakEat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-side d-flex">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link signin disablebth"
+                href="./login.html"
+                style="padding: 13px; font-weight: bold; font-size: 20px"
+                >Sign in</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link signup rounded-pill disablebth"
+                href="./login.html"
+                style="padding: 13px; font-weight: bold; font-size: 20px"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid Sec1 text-center">
+      <div class="innerInputDiv">
+        <div class="input-group mb-3">
+          <input
+            class="form-control locAndDes"
+            type="text"
+            name="Location"
+            id="Location"
+            placeholder="Enter Location"
+          />
+          <span
+            class="input-group-text material-symbols-outlined"
+            style="padding-top: 12px; font-size: 32px"
+          >
+            near_me
+          </span>
+        </div>
+        <br />
+        <div class="input-group mb-3">
+          <input
+            class="form-control locAndDes"
+            type="text"
+            name="Destination"
+            id="Destination"
+            placeholder="Enter Destination"
+          />
+          <span
+            class="input-group-text material-symbols-outlined"
+            style="padding-top: 12px; font-size: 32px"
+          >
+            location_on
+          </span>
+        </div>
+        <a
+          class="nav-link signup rounded-pill mt-4"
+          href="#"
+          style="padding: 13px; font-weight: bold; font-size: 22px"
+          >Let's Go</a
+        >
+      </div>
+    </div>
+    <div class="position-absolute bottom-0 start-0 end-0 z-1">
+      <img class="wave mb-md-n2" src="./images/Wave.svg" alt="" />
+      <div class="bg-white py-2 py-md-5"></div>
+    </div>
+    <div class="container Sec2 text-dark">
+      <div class="row text-center mb-5" style="margin-top: 9rem !important">
+        <div class="col-lg-4 mb-5">
+          <h1 class="h1 mb-3 numbers" id="numbers1">0</h1>
+          <h6 class="h4 textNumber">
+            Offices are available on different countries
+          </h6>
+        </div>
+        <div class="col-lg-4 mb-5">
+          <h1 class="h1 mb-3 numbers" id="numbers2">0</h1>
+          <h6 class="h4 textNumber">
+            Seats are available right now with support
+          </h6>
+        </div>
+        <div class="col-lg-4 mb-5">
+          <h1 class="h1 mb-3 numbers" id="numbers3">0</h1>
+          <h6 class="h4 textNumber">
+            People are using our co-work spaces right now
+          </h6>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="container mb-5" style="max-width: 1798px">
+      <div class="row row-gap-5">
+        <div class="col-lg-6">
+          <img
+            src="./images/7649997.jpg"
+            alt=""
+            class="img-fluid rounded"
+            width="95%"
+          />
+        </div>
+        <div
+          class="col-lg-6"
+          style="display: flex; flex-direction: column; justify-content: center"
+        >
+          <h1 style="color: #00b4d8; font-size: 3.5rem">
+            Available When You need, Go Where You Wish
+          </h1>
+          <br />
+          <p style="font-size: 1.5rem">
+            "Freedom is at your fingertips with our service. Available when you
+            need, ready to take you wherever your journey leads. Whether it's a
+            spontaneous adventure or a planned excursion, we're here to empower
+            your mobility. Your destination awaits—let's embark on the road to
+            possibility together"
+          </p>
+          <br />
+          <a
+            class="nav-link signup rounded-pill mt-4 getStarted"
+            href="#"
+            style="padding: 13px; font-weight: bold; font-size: 22px"
+            >Get Started<span class="material-symbols-outlined">
+              arrow_right_alt
+            </span></a
+          >
+        </div>
+
+        <div
+          class="col-lg-6"
+          style="display: flex; flex-direction: column; justify-content: center"
+        >
+          <h1 style="color: #00b4d8; font-size: 3.5rem">
+            Elevate family adventures with our tailored service
+          </h1>
+          <br />
+          <p style="font-size: 1.5rem">
+            "Gift your loved ones unforgettable moments with our service.
+            Providing unparalleled experiences tailored to your family's
+            desires. Let us craft cherished memories as we journey together
+            towards extraordinary destinations. Your family deserves nothing
+            less than exceptional—let's create magic, one ride at a time"
+          </p>
+          <br />
+          <a
+            class="nav-link signup rounded-pill mt-4 getStarted"
+            href="#"
+            style="padding: 13px; font-weight: bold; font-size: 22px"
+            >Get Started<span class="material-symbols-outlined">
+              arrow_right_alt
+            </span></a
+          >
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="./images/driving-car-3760558-3136044.webp"
+            alt=""
+            class="img-fluid rounded"
+            width="95%"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mb-5" style="background-color: #f6f6f6">
+      <div class="container" style="max-width: 1690px">
+        <div class="row text-center">
+          <div class="col-lg-7 mt-5 mb-5">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <p>
+                    "PeekDrive takes the stress out of transportation. As
+                    passengers, we appreciate their consistent reliability and
+                    smooth service. Whether it's a short trip across town or a
+                    longer journey, PeekDrive ensures we reach our destination
+                    comfortably and on time."
+                  </p>
+                  <br />
+                  <div class="row" style="align-items: center">
+                    <div class="col-4">
+                      <img
+                        class="img-fluid mb-5"
+                        src="./images/profile1.jpg"
+                        alt=""
+                        width="50%"
+                        style="border-radius: 100%; float: right"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <h4 class="namesInCarousel">"Rahul Shetti"</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <p>
+                    "As frequent passengers of your service, we've experienced
+                    nothing short of excellence. From the moment we book to the
+                    final drop-off, your professionalism and attention to detail
+                    shine through. Thank you for consistently exceeding our
+                    expectations!"
+                  </p>
+                  <br />
+                  <div class="row" style="align-items: center">
+                    <div class="col-4">
+                      <img
+                        class="img-fluid mb-5"
+                        src="./images/profile2.jpg"
+                        alt=""
+                        width="50%"
+                        style="border-radius: 100%; float: right"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <h4 class="namesInCarousel">"Rahman Karim"</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <p>
+                    "When it comes to transportation, reliability is key, and
+                    your service delivers every time. We've come to rely on your
+                    punctuality and efficiency for our daily commutes and
+                    special occasions alike. You've earned our trust, and we
+                    wouldn't hesitate to recommend you to others."
+                  </p>
+                  <br />
+                  <div class="row" style="align-items: center">
+                    <div class="col-4">
+                      <img
+                        class="img-fluid mb-5"
+                        src="./images/profile4.jpg"
+                        alt=""
+                        width="50%"
+                        style="border-radius: 100%; float: right"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <h4 class="namesInCarousel">"Abdullah Baig"</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <p>
+                    "Traveling with your service is always a pleasure. Your
+                    vehicles are clean and comfortable, and your drivers are
+                    friendly and courteous. Plus, the convenience of booking
+                    online or via your app makes our lives so much easier. Keep
+                    up the fantastic work!"
+                  </p>
+                  <br />
+                  <div class="row" style="align-items: center">
+                    <div class="col-4">
+                      <img
+                        class="img-fluid mb-5"
+                        src="./images/profile5.jpg"
+                        alt=""
+                        width="50%"
+                        style="border-radius: 100%; float: right"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <h4 class="namesInCarousel">"Shabnum Jabeen"</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <p>
+                    "You're more than just a transportation service to us;
+                    you're a partner in our journeys. Whether we're heading to
+                    the airport or exploring a new city, we know we can count on
+                    your service to get us there safely and reliably. Thank you
+                    for being a trusted companion on our adventures."
+                  </p>
+                  <br />
+                  <div class="row" style="align-items: center">
+                    <div class="col-4">
+                      <img
+                        class="img-fluid mb-5"
+                        src="./images/profile61.jpg"
+                        alt=""
+                        width="50%"
+                        style="border-radius: 100%; float: right"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <h4 class="namesInCarousel">"Zahra Batool"</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="prev"
+                style="padding-right: 88px"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="next"
+                style="padding-left: 84px"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 mb-5">
+            <h1 class="display-4" style="color: #00b4d8">
+              What They Say About Us?
+            </h1>
+            <br />
+            <br />
+            <br />
+            <p class="display-5" style="color: #636363; font-size: 40px">
+              Here are some reviews crafted from the perspective of passengers
+              and their experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style="align-items: center">
+        <div class="col-lg-6">
+          <h1 class="h1">About Us</h1>
+          <br />
+          <p class="h3" style="font-weight: lighter">
+            At PeekDrive, we're more than just a transportation service—we're
+            your partners in seamless journeys and unforgettable experiences.
+            Founded with a passion for excellence and a commitment to customer
+            satisfaction, PeekDrive strives to redefine the standard of
+            transportation services.
+          </p>
+          <br />
+          <a
+            class="nav-link signup rounded-pill mt-4 getStarted"
+            href="#"
+            style="padding: 13px; font-weight: bold; font-size: 22px"
+            >Read More<span class="material-symbols-outlined">
+              arrow_right_alt
+            </span></a
+          >
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="./images/talking.jpg"
+            alt=""
+            width="100%"
+          />
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="./images/happy-couple-young-people-rides-600nw-1619620189.webp"
+            alt=""
+            width="100%"
+          />
+        </div>
+        <div class="col-lg-6">
+          <br />
+          <p class="h3" style="font-weight: lighter">
+            At PeekDrive, we're more than just a transportation service—we're
+            your partners in seamless journeys and unforgettable experiences.
+            Founded with a passion for excellence.
+          </p>
+          <br />
+          <a
+            class="nav-link signup rounded-pill mt-4 getStarted"
+            href="#"
+            style="padding: 13px; font-weight: bold; font-size: 22px"
+            >Read More<span class="material-symbols-outlined">
+              arrow_right_alt
+            </span></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer mb-5">
+      <div class="container GIT">
+        <h1 class="h1 text-center" style="color: #00b4d8">
+          Get In Touch With Us
+        </h1>
+        <div class="row" style="max-width: 1523px">
+          <div class="col-lg-6 mt-5">
+            <img
+              src="./images/eating.jpg"
+              alt=""
+              class="img-fluid"
+              width="100%"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="row mt-5" style="justify-content: space-evenly">
+              <div class="col-lg-6 mt-3">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control text-center form-git"
+                  placeholder="Enter Name"
+                />
+              </div>
+              <div class="col-lg-6 mt-3">
+                <input
+                  type="text"
+                  name="Email"
+                  id="Email"
+                  class="form-control text-center form-git"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="col-lg-12">
+                <textarea
+                  name="message"
+                  class="form-control text-center mt-3"
+                  id="message"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+                <a
+                  class="nav-link signup rounded-pill mt-4 getStarted"
+                  href="#"
+                  style="padding: 13px; font-weight: bold; font-size: 22px"
+                  >Submit</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

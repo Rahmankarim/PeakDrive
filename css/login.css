@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background-image: url("../images/rear-view-from-backseat-driver-passenger-car-isolated-flat-illustration_74855-15507.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#collapsibleNavbar {
+  font-size: 30px;
+  justify-content: space-between;
+}
+.nav-item {
+  margin-left: 2vw;
+}
+.navbar-brand {
+  font-size: 60px;
+}
+.menudiv {
+  background-color: #c5c0ea;
+  z-index: 1000;
+  border-radius: 10px;
+}
+.navbar a {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #00b4d8;
+}
+.navbar-brand:hover {
+  color: #ffffff;
+}
+.container {
+  /* height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 50px;
+  margin-top: 40px;
+}
+.fields {
+  height: 58px;
+  font-size: 21px;
+}
+.tabs {
+  text-decoration: none;
+  width: 100%;
+  font-size: 28px;
+}
+.btn.active {
+  background-color: #00b4d8;
+}
+.btn.notactive {
+  background-color: rgba(0, 0, 0, 0.375);
+}
+.inputLabels {
+  font-size: 22px;
+}
+
+.activeBtn {
+  background-color: #00b4d8;
+}
+.activeBtn:hover {
+  background-color: #00b4d8;
+  transition: 0.2s ease-in-out;
+  transform: scale(0.9);
+}

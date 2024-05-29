@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-image: url("../images/licence.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#collapsibleNavbar {
+  font-size: 30px;
+  justify-content: space-between;
+}
+.nav-item {
+  margin-left: 2vw;
+}
+.navbar-brand {
+  font-size: 60px;
+}
+.right-side {
+  margin-right: 30px;
+}
+.signup {
+  background-color: #00b4d8;
+  color: rgb(255, 255, 255);
+}
+.menudiv {
+  z-index: 1000;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+  color: #00b4d8;
+}
+.navbar-brand:hover {
+  color: #ffffff;
+}
+.signup {
+  color: white;
+}
+.signup:hover {
+  background-color: white;
+  color: #00b4d8;
+}
+#map {
+  height: 80vh;
+  width: 90%;
+}
+.mapping {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1070px) {
+  .disablebth {
+    display: none;
+  }
+}
+#menudivid {
+  background-color: rgba(0, 0, 0, 0.505);
+}
+.left-menu {
+  background-color: transparent;
+}
+.left-menu:hover {
+  background-color: rgba(0, 0, 0, 0.505);
+}
+h4 {
+  color: white;
+}
